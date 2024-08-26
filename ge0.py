@@ -39,7 +39,7 @@ st.title("NSW Geo Bot")
 image_url = "https://www.popcultcha.com.au/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/s/u/supsu-powrw01-mgz-01-mighty-morphin-power-rangers---megazord-super-cyborg-11_-action-figure-2.jpeg"
 response = requests.get(image_url)
 img = Image.open(BytesIO(response.content))
-st.image(img, caption="NSW")
+st.image(img, caption="Dave 2.0")
 mineral_deposit = st.text_input("Hi, human! I'm Dave 2.0, your new chatbot friend. My brain has been uploaded into this digital vessel. So you're interest in NSW mineral deposits, what's the name of a mineral deposit in NSW that you're interested in?")
 
 if st.button("Get Information"):
@@ -48,3 +48,5 @@ if st.button("Get Information"):
         st.write(response.text)
     else:
         st.warning("Please enter a mineral deposit name.")
+
+st.text (" Oh, and I'm not as sharp as my human predecessor, so be sure to double-check anything important.")
