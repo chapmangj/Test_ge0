@@ -40,7 +40,7 @@ image_url = "https://www.popcultcha.com.au/media/catalog/product/cache/207e23213
 response = requests.get(image_url)
 img = Image.open(BytesIO(response.content))
 st.image(img, caption="Dave 2.0", width=400)
-mineral_deposit = st.text_input("Hi, human! I'm Dave 2.0, your new chatbot friend. My brain has been uploaded into this digital vessel. So you're interest in NSW mineral deposits, what's the name of a mineral deposit in NSW that you're interested in?")
+mineral_deposit = st.text_input("Hi, human! I'm Dave 2.0, your new chatbot friend. My brain has been uploaded into this digital vessel. So you're interest in NSW mineral deposits, what's the name of a mineral deposit in NSW that you're interested in?", font="14px")
 
 if st.button("Get Information"):
     if mineral_deposit:
