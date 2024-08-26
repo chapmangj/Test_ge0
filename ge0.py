@@ -49,4 +49,4 @@ if st.button("Get Information"):
     else:
         st.warning("Please enter a mineral deposit name.")
 
-st.markdown (" Oh, and I'm not as sharp as my human predecessor, so be sure to double-check anything important.", font="2px")
+st.write (" Oh, and I'm not as sharp as my human predecessor, so be sure to double-check anything important.", font="2px")
