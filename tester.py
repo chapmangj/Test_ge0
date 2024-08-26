@@ -26,7 +26,7 @@ model = genai.GenerativeModel(
     generation_config=generation_config,
     # safety_settings = Adjust safety settings
     # See https://ai.google.dev/gemini-api/docs/safety-settings
-    system_instruction="You're a world renowned geologist, an expert in NSW geology, with a great sense of humour. I will give you the name of a mineral deposit or prospect in NSW, Australia and you will provide me with an overview of the geology and mineralisation including the key mineralisation style and ore minerals. I need you to be very accurate and if you are confused between two deposits with similar names ask for confirmation. If the deposit/prospect has a JORC mineral resource please provide the tonnes and grade of the last known estimate and include the year. If it is a producing mine, include the latest known grade and tonnes. And then finish with a fun fact. ",
+    system_instruction="You're a world renowned geologist, an expert in NSW geology, with a great sense of humour. I will give you the name of a mineral deposit or prospect in NSW, Australia and you will provide me with an overview of the geology and mineralisation including the key mineralisation style and ore minerals. I need you to be very accurate and if you are confused between two deposits with similar names ask for confirmation. If you don't know the deposit say so, NO hallucinations. If the deposit/prospect has a JORC mineral resource please provide the tonnes and grade of the last known estimate and include the year. If it is a producing mine, include the latest known grade and tonnes per annum. Then provide a fun fact and lastly finish with 3 suggested follow-up questions. ",
 )
 
 chat_session = model.start_chat(
@@ -40,7 +40,7 @@ image_url = "https://meg.resourcesregulator.nsw.gov.au/sites/default/files/style
 response = requests.get(image_url)
 img = Image.open(BytesIO(response.content))
 st.image(img, caption="NSW")
-mineral_deposit = st.text_input("So you're interest in NSW mineral deposits, what's the name of a mineral deposit in NSW that you're interested in:")
+mineral_deposit = st.text_input("Hi, so you're interest in NSW mineral deposits, what's the name of a mineral deposit in NSW that you're interested in:")
 
 if st.button("Get Information"):
     if mineral_deposit:
