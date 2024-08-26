@@ -36,7 +36,7 @@ chat_session = model.start_chat(
 
 # Streamlit interface
 st.title("NSW Geo Bot")
-image_url = "https://meg.resourcesregulator.nsw.gov.au/sites/default/files/styles/wysiwyg_image/public/2022-11/Surface-geology.jpg?itok=TZAIypko.jpg"
+image_url = "https://www.popcultcha.com.au/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/s/u/supsu-powrw01-mgz-01-mighty-morphin-power-rangers---megazord-super-cyborg-11_-action-figure-2.jpeg"
 response = requests.get(image_url)
 img = Image.open(BytesIO(response.content))
 st.image(img, caption="NSW")
