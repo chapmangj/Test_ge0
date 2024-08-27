@@ -47,3 +47,5 @@ if st.button("Get Information"):
         st.write(response.text)
     else:
         st.warning("Please enter a mineral deposit name.")
+
+st.write ("Be sure to double-check anything important. I work by converting your text to tokens to represent meaning and context. I then use these tokens to predict the next sequence of words. The answer returned is based on a probability,  based on the likelihood of that sequence of tokens appearing next. Think of a probability distribution, it picks the answer that seems most likely, this is why we may get hallucinations when the correct answer is not well represented in the model data.")
