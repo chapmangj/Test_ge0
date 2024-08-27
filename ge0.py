@@ -49,4 +49,4 @@ if st.button("Get Information"):
     else:
         st.warning("Please enter a mineral deposit name.")
 
-st.write (" Oh, and I'm not as sharp as my human predecessor, so be sure to double-check anything important.", font="2px")
+st.write (" Oh, and I'm not as sharp as my human predecessor, so be sure to double-check anything important.I work by converting your text to tokens to represent context. I then use these tokens to predict the next sequence of words. The answer returned is based on a probability,  based on thr likelihood of that sequenceof tokens appearing next. Think of a probability distribution, it picks the answer that seems most likely, this is why we get hallucinationswhen the correct answer is not well represented in the training data.", font="2px")
