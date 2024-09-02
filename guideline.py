@@ -1,4 +1,4 @@
-import streamlit as st
+eimport streamlit as st
 import requests
 from PIL import Image
 from io import BytesIO
@@ -39,7 +39,7 @@ chat_session = model.start_chat(history=[])
 @st.cache_resource
 def process_pdfs():
     pdf_folder = "pdfs"
-    pdf_files = ["document1.pdf", "document2.pdf"]
+    pdf_files = ["Guideline.pdf"]
     
     text = ""
     for pdf_file in pdf_files:
