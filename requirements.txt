@@ -1,6 +1,1 @@
-langchain
-   chromadb
-   streamlit
-   pypdf
-   sentence-transformers
-   huggingface_hub
+google-generativeai
