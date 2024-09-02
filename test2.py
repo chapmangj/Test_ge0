@@ -1,6 +1,8 @@
 import streamlit as st
-from llama_index import VectorStoreIndex, SimpleDirectoryReader, LLMPredictor
+from llama_index import VectorStoreIndex
 from llama_index.llms import Groq
+from llama_index import SimpleDirectoryReader
+from llama_index import LLMPredictor
 
 st.set_page_config(page_title="Chat with the Streamlit docs, powered by LlamaIndex", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
 groq_api_key = st.secrets.groq_key  # Assuming you have stored your Groq API key in Streamlit secrets
