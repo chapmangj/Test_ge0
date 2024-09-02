@@ -4,5 +4,5 @@ pydantic==2.8.2
 google-generativeai
 pypdf
 langchain==0.2.15
-   faiss-cpu
    sentence-transformers
+chromadb
