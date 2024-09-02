@@ -1,3 +1,2 @@
 google-generativeai
-pyPDF2
-langchain==0.0.325
+
