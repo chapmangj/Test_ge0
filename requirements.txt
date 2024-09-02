@@ -1,8 +1,8 @@
 langchain==0.2.15
 langsmith==0.1.108
 pydantic==2.8.2
-streamlit==1.38.0
-faiss-cpu
 google-generativeai
 pypdf
-sentence-transformers
+langchain==0.2.15
+   faiss-cpu
+   sentence-transformers
