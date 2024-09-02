@@ -3,6 +3,6 @@ Pillow
 google-generativeai
 pypdf
 langchain==0.0.123
-faiss-cpu
+  faiss-cpu
 transformers
-sentence-transformers
+  sentence-transformers
