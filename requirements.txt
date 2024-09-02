@@ -1,8 +1,6 @@
-langchain==0.2.15
-langsmith==0.1.108
-pydantic==2.8.2
-google-generativeai
-pypdf
-langchain==0.2.15
+langchain
+   chromadb
+   streamlit
+   pypdf
    sentence-transformers
-chromadb
+   huggingface_hub
