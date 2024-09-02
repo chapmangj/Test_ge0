@@ -3,4 +3,6 @@ Pillow
 google-generativeai
 pypdf
 langchain
-faiss-cpu
+  faiss-cpu
+transformers
+   sentence-transformers
