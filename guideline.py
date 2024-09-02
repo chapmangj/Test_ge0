@@ -6,10 +6,12 @@ import os
 import google.generativeai as genai
 from pypdf import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import GooglePalm
+from langchain.embeddings import SentenceTransformersEmbeddings
+
+
 
 # Set the API keys
 gemini_api_key = st.secrets["GEMINI_API_KEY"]
@@ -56,7 +58,7 @@ def process_pdfs():
     )
     chunks = text_splitter.split_text(text)
     
-    embeddings = HuggingFaceEmbeddings()
+    embeddings = SentenceTransformersEmbeddings(model_name="all-MiniLM-L6-v2")
     knowledge_base = FAISS.from_texts(chunks, embeddings)
     
     return knowledge_base
