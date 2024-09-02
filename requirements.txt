@@ -2,7 +2,7 @@ requests
 Pillow
 google-generativeai
 pypdf
-langchain==0.0.123
+langchain==0.0.239
   faiss-cpu
 transformers
   sentence-transformers
