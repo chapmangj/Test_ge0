@@ -2,5 +2,5 @@ requests
 Pillow
 google-generativeai
 pypdf
-langchain
-   faiss-cpu
+langchain==0.0.123
+   faiss-cpu==1.7.3
